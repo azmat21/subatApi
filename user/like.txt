@@ -1,0 +1,46 @@
+URL:
+http://m.subat.cn/api_tahcew/v1/user/like.php
+
+URL Params:
+| param         | required | type   | explain |
+| :----         | :------- | ------ | ------- |
+| uid           | true     | int    | user |
+| start         | false    | int    | start of select like's song |
+Success Response
+{
+"result":true,
+"msg":"",
+    "data":[
+        {
+        "title":"قارا دەيدۇ-sixcity",
+        "tag":"sixcity,رەپ,",
+        "art":"http://m.subat.cn/thumb.php?src=1032919048_1909338046_937937597.png&t=m&w=112&h=112",
+        "likes":"1",
+        "views":"6",
+        "file":"http://cdn.m.subat.cn/o_196a2pj2h1oaltjjj681c6fv6n7/zhajm_132983622777hd_clip.mp3",
+        "username":"سايىۋەن"
+        },
+        {
+        "title":"سېغىنىش-ئەنۋەر نىياز",
+        "tag":"بەھىرلەنگەيسىلەر,",
+        "art":"http://m.subat.cn/thumb.php?src=1112616468_747163061_1909060241.JPG&t=m&w=112&h=112",
+        "likes":"2",
+        "views":"14",
+        "file":"http://cdn.m.subat.cn/o_196f22ur61f6k1i11ts7eil1jk8c/Seghinix.mp3",
+        "username":"jumajan"
+        }
+    ]
+}
+Error Response:
+```uid
+    {
+    "result":false,
+    "msg":"ئەزلىق نۇمۇرى چۇقۇم بۇلۇشى كىرەك",
+    "data":null
+    }
+```no more
+    {
+    "result":false,
+    "msg":"نەتىجە قالمىدى",
+    "data":null
+    }

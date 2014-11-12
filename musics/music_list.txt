@@ -1,0 +1,35 @@
+URL:
+http://m.subat.cn/api_tahcew/v1/musics/
+
+URL Params:
+| param         | required | type   | explain |
+| :----         | :------- | ------ | ------- |
+| order         | false    | string | valuses:"hot","new","rand","like"|
+| start         | false    | int    | start of music select,per page 15|
+| keyword       | false    | string | keyword for search,tag,cat|
+
+Success Response
+result=true;
+msg='';
+data:
+json type of this array
+[0]=>
+  array(7) {
+    ["title"]=>
+    string(42) "ئەدەبىي ئاڭلىتىش-2014-11-07"
+    ["tag"]=>
+    string(31) "ئەدەبىي ئاڭلىتىش"
+    ["art"]=>
+    string(82) "http://m.subat.cn/thumb.php?src=1476996533_1326849505_88251734.jpg&t=m&w=112&h=112"
+    ["likes"]=>
+    string(1) "0"
+    ["views"]=>
+    string(1) "0"
+    ["file"]=>
+    string(50) "http://cdn.m.subat.cn/subatcn-342545d09223ba40.mp3"
+    ["username"]=>
+    string(31) "ئەدەبىي ئاڭلىتىش"
+  }
+Error Response:
+result=false;
+msg='no more';

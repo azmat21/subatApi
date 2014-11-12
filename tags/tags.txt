@@ -1,0 +1,36 @@
+URL:
+http://m.subat.cn/api_tahcew/v1/tags/
+URL Params:
+| param         | required | type   | explain |
+| :----         | :------- | ------ | ------- |
+| start         | false    | int    | start of hot_tag select,per page 10|
+Success Response
+result=true;
+msg='';
+data:
+json type of this array
+array(10) {
+  [0]=>
+  string(14) "ئەزالار"
+  [1]=>
+  string(16) "ئۇيغۇرچە"
+  [2]=>
+  string(16) "مۇھاببەت"
+  [3]=>
+  string(14) "تۈرۈكچە"
+  [4]=>
+  string(25) "يېڭى ناخشىلار"
+  [5]=>
+  string(16) "ئامىرىكا"
+  [6]=>
+  string(16) "ئۆزبەكچە"
+  [7]=>
+  string(12) "مۇزىكا"
+  [8]=>
+  string(23) "كېنو ناخشىسى"
+  [9]=>
+  string(22) "ھىندىستانچە"
+}
+Error Response:
+result=false;
+msg='no more';

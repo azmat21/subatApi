@@ -1,0 +1,27 @@
+URL:
+http://m.subat.cn/api_tahcew/v1/user/login.php
+Method:POST
+Data Params
+| param                 | required | type   | explain |
+| :----                 | :------- | ------ | ------- |
+| email                 | true     | string |         |
+| password              | true     | string |         |
+Success Response
+resut: true
+msg: ""
+data:
+    email: "uzulmes@126.com"
+    idu: "42"
+    image: "http://m.subat.cn/thumb.php?src=1670719218_411259434_1307928434.png&t=a&w=112&h=112"
+    username: "ئۈزۈلمەس مىلودىيە"
+Error Response:
+
+```unset email || username || password
+    data: null
+    msg: "تۇلۇق تولدۇرۇڭ"
+    resut: false
+
+```wrong email || password
+    data: null
+    msg: "پارول ياكى ئىسىم خاتا بۇلۇپ قالدى"
+    resut: false

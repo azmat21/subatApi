@@ -1,0 +1,51 @@
+URL:
+http://m.subat.cn/api_tahcew/v1/user/register.php
+Method:POST
+Data Params
+| param                 | required | type   | explain |
+| :----                 | :------- | ------ | ------- |
+| email                 | true     | string |         |
+| password              | true     | string |         |
+| name                  | true     | string |         |
+Success Response
+{
+    "result":true,
+    "msg":"",
+    "data":{
+            "idu":"115",
+            "username":"gheni199383",
+            "email":"sayiwen@1634.com",
+            "image":"http://m.subat.cn/thumb.php?src=default.png&t=a&w=112&h=112"
+            }
+}
+Error Response:
+```short name
+    {
+    "result":false,
+    "msg":"ئىسىم قىسقا بۇلۇپ قالدى",
+    "data":null
+    }
+```wrong email
+    {
+    "result":false,
+    "msg":"ئىلخەت خاتا بۇلۇپ قالدى",
+    "data":null
+    }
+```username_exist
+    {
+    "result":false,
+    "msg":"بۇ ئىسىمنى باشقىلار ئىشلىتىپ بوپتۇ باشقنى سىناڭ.",
+    "data":null
+    }
+```email_exsit
+    {
+    "result":false,
+    "msg":"بۇ ئىلخەتنى باشقىلار ئىشلىتىپ بوپتۇ.باشقىنى سىناڭ",
+    "data":null
+    }
+```short password
+    {
+    "result":false,
+    "msg":"پارول بەك قىسقا بۇلۇپ قالدى",
+    "data":null
+    }

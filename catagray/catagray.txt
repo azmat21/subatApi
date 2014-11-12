@@ -1,0 +1,32 @@
+URL:
+http://m.subat.cn/api_tahcew/v1/catagray/
+
+URL Params:
+no
+
+Success Response
+result=true;
+msg='';
+data:
+json type of this array
+array(8) {
+  [0]=>
+  string(16) "ئۆزبەكچە"
+  [1]=>
+  string(16) "ئۇيغۇرچە"
+  [2]=>
+  string(10) "پەچەت"
+  [3]=>
+  string(12) "تەمبۈر"
+  [4]=>
+  string(10) "خەلىق"
+  [5]=>
+  string(12) "دۇتتار"
+  [6]=>
+  string(12) "گىتتار"
+  [7]=>
+  string(6) "مۇڭ"
+}
+Error Response:
+result=false;
+msg='no more';
